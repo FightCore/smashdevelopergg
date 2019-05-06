@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from 'src/app/services/project/project.service';
+import { Project } from 'src/app/models/projects/project';
 
 @Component({
   selector: 'app-project-list-item',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectListItemComponent implements OnInit {
 
-  constructor() { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
+  }
+
+  protected get projects(): Project[] {
+    return this.projectService.getProjects();
   }
 
 }
