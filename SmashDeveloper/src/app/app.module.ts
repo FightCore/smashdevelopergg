@@ -16,7 +16,7 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
   { path: '', redirectTo: 'projects', pathMatch: 'full'}
-]
+];
 
 @NgModule({
   declarations: [

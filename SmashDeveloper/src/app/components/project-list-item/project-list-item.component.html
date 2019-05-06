@@ -1,25 +1,34 @@
-<div *ngFor="let project of projects">
-  <mat-card class="project-card">
-    <mat-card-header>
-      <img mat-card-avatar [src]="project.imageUrl" alt="Project image"/>
-      <mat-card-title>{{ project.name }}</mat-card-title>
-      <mat-card-subtitle>By {{ project.owner }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>
-        {{ project.description }}
-      </p>
-      <p *ngIf="project.releaseLink">
-          Official website: <a [href]="project.releaseLink">{{ project.releaseLink }}</a>
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <a *ngIf="project.sourceLink" [href]="project.sourceLink" mat-raised-button color="primary">
-        Source Code
-      </a>
-      <a *ngIf="project.releaseLink" [href]="project.releaseLink" mat-raised-button color="primary">
-        Website
-      </a>
-    </mat-card-actions>
-  </mat-card>
-</div>
+<mat-card class="project-card">
+  <mat-card-header>
+    <img mat-card-avatar [src]="project.imageUrl" alt="Project image" />
+    <mat-card-title>{{ project.name }}</mat-card-title>
+    <mat-card-subtitle>By {{ project.owner }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <span class="project-description">
+      {{ project.description | slice:1:500 }}<span *ngIf="project.description.length > 500">...</span>
+    </span>
+    <p *ngIf="project.releaseLink">
+      Official website:
+      <a [href]="project.releaseLink">{{ project.releaseLink }}</a>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a
+      *ngIf="project.sourceLink"
+      [href]="project.sourceLink"
+      mat-raised-button
+      color="primary"
+    >
+      Source Code
+    </a>
+    <a
+      *ngIf="project.releaseLink"
+      [href]="project.releaseLink"
+      mat-raised-button
+      color="primary"
+    >
+      Website
+    </a>
+  </mat-card-actions>
+</mat-card>
