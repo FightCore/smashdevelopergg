@@ -6,7 +6,7 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="project-display">
-  <div *ngIf="projects.length > 0; else noProjects" class="row project-rows">
+  <div *ngIf="projects && projects.length > 0; else noProjects" class="row project-rows">
     <div *ngFor="let project of projects" class="col-lg-4">
       <app-project-list-item
         class="project-item"
