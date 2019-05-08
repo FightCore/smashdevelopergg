@@ -2,7 +2,11 @@
   <mat-card-header>
     <img *ngIf="project.imageUrl" mat-card-avatar
       [src]="project.imageUrl" alt="Project image" />
-    <mat-card-title>{{ project.name }}</mat-card-title>
+    <mat-card-title>
+      {{ project.name }}
+    </mat-card-title>
+    <span class="fill-empty"></span>
+    <app-project-icon [projectType]="project.type"></app-project-icon>
     <mat-card-subtitle>By {{ project.owner }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class="project-content">

@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SourceIconComponent } from './components/source-icon/source-icon.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { ProjectIconComponent } from './components/project-icon/project-icon.component';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     NavBarComponent,
     SearchBarComponent,
     SourceIconComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectIconComponent
   ],
   imports: [
     BrowserModule,

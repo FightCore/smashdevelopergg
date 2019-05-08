@@ -24,13 +24,7 @@ export class ProjectPageComponent implements OnInit {
 
   protected setProjects(projects: Project[]) {
     this.projectList = [];
-    for (let y = 0; y < 10; y++) {
-      for (let i = 0; i < projects.length; i++) {
-        this.projectList.push(projects[i]);
-      }
-    }
-
-    // this.projectList = projects;
+    this.projectList = projects;
     this.displayData = this.projectList;
   }
 
