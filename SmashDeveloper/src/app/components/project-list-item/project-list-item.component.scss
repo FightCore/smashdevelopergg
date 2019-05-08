@@ -1,5 +1,10 @@
 .project-card {
-    .project-description {
-
+    height: calc(100% - 2em);
+    .mat-card-avatar {
+        max-width: 5em;
+        max-height: 5em;
+    }
+    .project-content {
+        height: calc(100% - 9em);
     }
 }

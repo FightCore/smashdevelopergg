@@ -5,14 +5,16 @@
         "description": "FightCore but now loaded form a simple JSON File",
         "sourceLink": "https://github.com/FightCore/FightCore",
         "releaseLink": "https://www.fightcore.org",
-        "imageUrl": "https://github.com/FightCore/FightCore/blob/feature/cleanup/Frontend/src/assets/images/FC.png?raw=true"
+        "imageUrl": "https://github.com/FightCore/FightCore/blob/feature/cleanup/Frontend/src/assets/images/FC.png?raw=true",
+        "type": "website"
     },
     {
         "name": "SmashDeveloper",
         "owner": "Bort",
         "description": "A list of tools and resources made by the smash community",
         "sourceLink": "https://github.com/FightCore/SmashDevelopergg",
-        "releaseLink": "https://smashdeveloper.gg"
+        "releaseLink": "https://smashdeveloper.gg",
+        "type": "website"
     },
     {
         "name": "20XXTE",
@@ -20,6 +22,15 @@
         "description": "Welcome to the next generation of Super Smash Bros. Melee. 20XXTE is a highly-polished Melee mod designed to completely replace vanilla Melee in any setting, home or tournament. It can be run on any Gamecube or Wii with nothing but a memory card and a special save file - no hacking or homebrew required. (NTSC v1.02 only; v1.00 and v1.01 have limited features for compatibility in running tournaments)",
         "sourceLink": "https://bitbucket.org/dansalvato/20xx-tournament-edition/downloads/",
         "releaseLink": "www.20xx.me",
-        "imageUrl": "http://www.20xx.me/uploads/4/9/0/8/49086459/1448750273.png"
+        "imageUrl": "http://www.20xx.me/favicon.ico",
+        "type": "mod"
+    },
+    {
+        "name": "Purah",
+        "owner": "monospacedmagic",
+        "description": "A Discord bot specifically designed for Discord communities around the game Super Smash Bros. Ultimate",
+        "imageUrl": "https://images.discordapp.net/avatars/522485771593056287/fdfdbc8a60cc79f12e1ef28e30d5a9ae.png",
+        "releaseLink": "https://discordbots.org/bot/522485771593056287",
+        "type": "discord"
     }
 ]

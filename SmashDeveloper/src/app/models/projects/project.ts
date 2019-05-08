@@ -15,4 +15,7 @@ export class Project {
     releaseLink?: String;
 
     imageUrl?: String;
+
+    // TODO Convert to enum
+    type: String;
 }
