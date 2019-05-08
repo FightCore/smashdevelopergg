@@ -16,7 +16,7 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { SourceIconComponent } from './components/source-icon/source-icon.component';
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
   { path: '', redirectTo: 'projects', pathMatch: 'full' }
@@ -28,7 +28,8 @@ const appRoutes: Routes = [
     ProjectListItemComponent,
     ProjectPageComponent,
     NavBarComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    SourceIconComponent
   ],
   imports: [
     BrowserModule,

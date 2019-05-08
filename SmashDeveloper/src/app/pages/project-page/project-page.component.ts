@@ -27,7 +27,7 @@ export class ProjectPageComponent implements OnInit {
   protected search(item: string) {
     if (item) {
       this.displayData = this.projectList.filter(project => {
-        return project.name.includes(item);
+        return project.name.toLowerCase().includes(item.toLowerCase());
       });
 
       return;

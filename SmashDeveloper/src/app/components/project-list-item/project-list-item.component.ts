@@ -15,12 +15,12 @@ export class ProjectListItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  protected isGitHub() {
+  protected getIcon(): string {
     if (this.project.sourceLink.includes('github')) {
-      return true;
+      return '\'[\'fab\', \'github\']\'';
     }
 
-    return false;
+    return 'question';
   }
 
 

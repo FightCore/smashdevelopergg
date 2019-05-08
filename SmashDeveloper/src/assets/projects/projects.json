@@ -13,5 +13,13 @@
         "description": "A list of tools and resources made by the smash community",
         "sourceLink": "https://github.com/FightCore/SmashDevelopergg",
         "releaseLink": "https://smashdeveloper.gg"
+    },
+    {
+        "name": "20XXTE",
+        "owner": "Dan Salvato",
+        "description": "Welcome to the next generation of Super Smash Bros. Melee. 20XXTE is a highly-polished Melee mod designed to completely replace vanilla Melee in any setting, home or tournament. It can be run on any Gamecube or Wii with nothing but a memory card and a special save file - no hacking or homebrew required. (NTSC v1.02 only; v1.00 and v1.01 have limited features for compatibility in running tournaments)",
+        "sourceLink": "https://bitbucket.org/dansalvato/20xx-tournament-edition/downloads/",
+        "releaseLink": "www.20xx.me",
+        "imageUrl": "http://www.20xx.me/uploads/4/9/0/8/49086459/1448750273.png"
     }
 ]

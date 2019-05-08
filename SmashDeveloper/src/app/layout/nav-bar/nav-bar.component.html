@@ -1,3 +1,13 @@
 <mat-toolbar color="primary">
   <span>SmashDeveloper</span>
+  <mat-divider [vertical]="true"></mat-divider>
+  <a routerLink="/projects" routerLinkActive="active">Projects</a>
+  <a routerLink="/resources" routerLinkActive="active">Resources</a>
+  <span class="fill-empty"></span>
+  <a href="https://twitter.com/BortTheBeaver">
+    <fa-icon size="lg"[icon]="['fab', 'twitter']"></fa-icon>
+  </a>
+  <a href="https://github.com/FightCore/smashdevelopergg">
+    <fa-icon size="lg" [icon]="['fab', 'github']"></fa-icon>
+  </a>
 </mat-toolbar>

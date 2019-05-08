@@ -1,8 +1,17 @@
-<div class="project-display">
-  <app-search-bar (searchEvent)="search($event)"></app-search-bar>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>Projects</h1>
+    <span class="fill-empty"></span>
+    <app-search-bar (searchEvent)="search($event)"></app-search-bar>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="project-display"> 
   <div class="row project-rows">
     <div *ngFor="let project of projects" class="col-lg-4">
-      <app-project-list-item class="project-item" [project]=project></app-project-list-item>
+      <app-project-list-item
+        class="project-item"
+        [project]="project"
+      ></app-project-list-item>
     </div>
   </div>
 </div>

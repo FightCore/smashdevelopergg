@@ -20,8 +20,8 @@
       mat-raised-button
       color="primary"
     >
-    <fa-icon *ngIf="isGitHub()" size="xs" [icon]="['fab', 'github']"></fa-icon>
-      Source Code
+    <app-source-icon [sourceUrl]="project.sourceLink"></app-source-icon>
+    Source Code
     </a>
     <a
       *ngIf="project.releaseLink"

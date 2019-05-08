@@ -1,12 +1,17 @@
 .project-display {
-    height: 100%;
-    .project-rows {
-        margin-left: 1em;
-        margin-right: 1em;
+  height: 100%;
+  .project-rows {
+    margin-left: 1em;
+    margin-right: 1em;
 
-        .project-item {
-            padding: 1em;
-        }
+    .project-item {
+      padding: 1em;
     }
+  }
 }
 
+.mat-toolbar {
+  h1 {
+    font-size: 150%;
+  }
+}
