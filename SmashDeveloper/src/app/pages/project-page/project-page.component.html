@@ -1,5 +1,8 @@
-<mat-grid-list class="project-grid" cols="2" rowHeight="4:1" gutterSize="1em">
-  <mat-grid-tile *ngFor="let project of projects" class="col-lg-4">
-    <app-project-list-item [project]=project></app-project-list-item>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="project-display">
+  <app-search-bar></app-search-bar>
+  <div class="row project-rows">
+    <div *ngFor="let project of projects" class="col-lg-4">
+      <app-project-list-item class="project-item" [project]=project></app-project-list-item>
+    </div>
+  </div>
+</div>

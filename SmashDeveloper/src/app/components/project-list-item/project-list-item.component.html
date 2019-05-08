@@ -5,9 +5,9 @@
     <mat-card-subtitle>By {{ project.owner }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <span class="project-description">
-      {{ project.description | slice:1:500 }}<span *ngIf="project.description.length > 500">...</span>
-    </span>
+    <p class="project-description">
+      {{ project.description | slice:0:500 }}<span *ngIf="project.description.length > 500">...</span>
+    </p>
     <p *ngIf="project.releaseLink">
       Official website:
       <a [href]="project.releaseLink">{{ project.releaseLink }}</a>

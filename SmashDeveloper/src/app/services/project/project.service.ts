@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Project } from 'src/app/models/projects/project';
 import { markParentViewsForCheckProjectedViews } from '@angular/core/src/view/util';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 /**
  * Service used to load projects from the given data source.*
@@ -10,16 +12,12 @@ import { markParentViewsForCheckProjectedViews } from '@angular/core/src/view/ut
 })
 export class ProjectService {
 
-constructor() { }
+constructor(private httpClient: HttpClient) { }
   /**
    * Gets a list of known projects.
    */
-  public getProjects(): Project[] {
-    const projects = [];
-    for (let i = 0; i < 30; i++){
-      projects.push(this.generateFightCore());
-    }
-    return projects;
+  public getProjects(): Observable<Project[]> {
+    return this.httpClient.get<Project[]>('./assets/projects/projects.json');
   }
 
   /**

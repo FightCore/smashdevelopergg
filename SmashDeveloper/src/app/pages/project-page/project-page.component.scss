@@ -1,3 +1,13 @@
-.project-grid {
+.project-display {
     background-color: lightgray;
+
+    .project-rows {
+        margin-left: 1em;
+        margin-right: 1em;
+
+        .project-item {
+            padding: 1em;
+        }
+    }
 }
+

@@ -14,8 +14,10 @@ export class ProjectPageComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
-    this.projectList = this.projectService.getProjects();
-    this.displayData = this.projectList;
+    this.projectService.getProjects().subscribe(projects => {
+      this.projectList = projects;
+      this.displayData = this.projectList;
+    });
   }
 
   protected get projects(): Project[] {

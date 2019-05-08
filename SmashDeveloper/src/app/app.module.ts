@@ -9,9 +9,12 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ProjectListItemComponent } from '../app/components/project-list-item/project-list-item.component';
-import { SideNavComponent } from './layout/side-nav/side-nav.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
@@ -22,15 +25,18 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ProjectListItemComponent,
-    SideNavComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    NavBarComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModules,
     FontAwesomeModule,
-    RouterModule.forRoot(appRoutes)
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes),
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

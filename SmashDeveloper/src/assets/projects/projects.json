@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FightCore",
+        "owner": "Bort",
+        "description": "FightCore but now loaded form a simple JSON File",
+        "sourceLink": "https://github.com/FightCore/FightCore",
+        "releaseLink": "https://www.fightcore.org",
+        "imageUrl": "https://github.com/FightCore/FightCore/blob/feature/cleanup/Frontend/src/assets/images/FC.png?raw=true"
+    }
+]
