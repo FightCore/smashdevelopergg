@@ -17,6 +17,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SourceIconComponent } from './components/source-icon/source-icon.component';
+import { FooterComponent } from './layout/footer/footer.component';
+
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
   { path: '', redirectTo: 'projects', pathMatch: 'full' }
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     ProjectPageComponent,
     NavBarComponent,
     SearchBarComponent,
-    SourceIconComponent
+    SourceIconComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

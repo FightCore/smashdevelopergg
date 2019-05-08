@@ -8,6 +8,13 @@
       padding: 1em;
     }
   }
+
+  .no-projects-warning {
+    text-align: center;
+    .no-projects-icon {
+      color:red;
+    }
+  }
 }
 
 .mat-toolbar {

@@ -5,8 +5,8 @@
     <app-search-bar (searchEvent)="search($event)"></app-search-bar>
   </mat-toolbar-row>
 </mat-toolbar>
-<div class="project-display"> 
-  <div class="row project-rows">
+<div class="project-display">
+  <div *ngIf="projects.length > 0; else noProjects" class="row project-rows">
     <div *ngFor="let project of projects" class="col-lg-4">
       <app-project-list-item
         class="project-item"
@@ -14,4 +14,9 @@
       ></app-project-list-item>
     </div>
   </div>
+  <ng-template #noProjects>
+    <h2 class="no-projects-warning" i18n>
+      <fa-icon class="no-projects-icon" icon="times"></fa-icon> No projects found for your search.
+    </h2>
+  </ng-template>
 </div>
