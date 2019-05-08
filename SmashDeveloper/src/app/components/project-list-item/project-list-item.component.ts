@@ -15,5 +15,13 @@ export class ProjectListItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  protected isGitHub() {
+    if (this.project.sourceLink.includes('github')) {
+      return true;
+    }
+
+    return false;
+  }
+
 
 }

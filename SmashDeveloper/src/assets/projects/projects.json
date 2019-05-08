@@ -6,5 +6,12 @@
         "sourceLink": "https://github.com/FightCore/FightCore",
         "releaseLink": "https://www.fightcore.org",
         "imageUrl": "https://github.com/FightCore/FightCore/blob/feature/cleanup/Frontend/src/assets/images/FC.png?raw=true"
+    },
+    {
+        "name": "SmashDeveloper",
+        "owner": "Bort",
+        "description": "A list of tools and resources made by the smash community",
+        "sourceLink": "https://github.com/FightCore/SmashDevelopergg",
+        "releaseLink": "https://smashdeveloper.gg"
     }
 ]

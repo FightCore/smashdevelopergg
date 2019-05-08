@@ -1,6 +1,6 @@
 <mat-card class="project-card">
   <mat-card-header>
-    <img mat-card-avatar [src]="project.imageUrl" alt="Project image" />
+    <img *ngIf="project.imageUrl" mat-card-avatar [src]="project.imageUrl" alt="Project image" />
     <mat-card-title>{{ project.name }}</mat-card-title>
     <mat-card-subtitle>By {{ project.owner }}</mat-card-subtitle>
   </mat-card-header>
@@ -20,6 +20,7 @@
       mat-raised-button
       color="primary"
     >
+    <fa-icon *ngIf="isGitHub()" size="xs" [icon]="['fab', 'github']"></fa-icon>
       Source Code
     </a>
     <a

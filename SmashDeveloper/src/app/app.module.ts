@@ -6,19 +6,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModules } from './material-modules';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ProjectListItemComponent } from '../app/components/project-list-item/project-list-item.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
-  { path: '', redirectTo: 'projects', pathMatch: 'full'}
+  { path: '', redirectTo: 'projects', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -36,13 +37,13 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
-    MDBBootstrapModule.forRoot()
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor() {
-    library.add(fas);
+    library.add(fas, fab);
   }
- }
+}
