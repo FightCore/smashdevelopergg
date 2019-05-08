@@ -1,4 +1,9 @@
-<mat-form-field>
-    <input matInput type="text" placeholder="Search"/>
-</mat-form-field>
-
+<div class="search-form">
+    <div class="search-form-items">
+  <mat-form-field class="search-form-search-box">
+      <mat-label>Search</mat-label>
+    <input id="search-input" matInput type="text"
+      placeholder="(EX): 20XXTE" (keyup)="onSearch()"/>
+  </mat-form-field>
+</div>
+</div>

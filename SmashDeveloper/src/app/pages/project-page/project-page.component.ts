@@ -23,4 +23,16 @@ export class ProjectPageComponent implements OnInit {
   protected get projects(): Project[] {
     return this.displayData;
   }
+
+  protected search(item: string) {
+    if (item) {
+      this.displayData = this.projectList.filter(project => {
+        return project.name.includes(item);
+      });
+
+      return;
+    }
+
+    this.displayData = this.projectList;
+  }
 }

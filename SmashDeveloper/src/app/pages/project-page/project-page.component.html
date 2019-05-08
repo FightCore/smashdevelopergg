@@ -1,5 +1,5 @@
 <div class="project-display">
-  <app-search-bar></app-search-bar>
+  <app-search-bar (searchEvent)="search($event)"></app-search-bar>
   <div class="row project-rows">
     <div *ngFor="let project of projects" class="col-lg-4">
       <app-project-list-item class="project-item" [project]=project></app-project-list-item>
