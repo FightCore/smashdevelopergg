@@ -6,7 +6,8 @@
         "sourceLink": "https://github.com/FightCore/FightCore",
         "releaseLink": "https://www.fightcore.org",
         "imageUrl": "https://github.com/FightCore/FightCore/blob/feature/cleanup/Frontend/src/assets/images/FC.png?raw=true",
-        "type": "website"
+        "type": "website",
+        "game": 6
     },
     {
         "name": "SmashDeveloper",
@@ -14,7 +15,8 @@
         "description": "A list of tools and resources made by the smash community",
         "sourceLink": "https://github.com/FightCore/SmashDevelopergg",
         "releaseLink": "https://smashdeveloper.gg",
-        "type": "website"
+        "type": "website",
+        "game": 6
     },
     {
         "name": "20XXTE",
@@ -23,7 +25,8 @@
         "sourceLink": "https://bitbucket.org/dansalvato/20xx-tournament-edition/downloads/",
         "releaseLink": "www.20xx.me",
         "imageUrl": "http://www.20xx.me/favicon.ico",
-        "type": "mod"
+        "type": "mod",
+        "game": 2
     },
     {
         "name": "Purah",
@@ -31,6 +34,7 @@
         "description": "A Discord bot specifically designed for Discord communities around the game Super Smash Bros. Ultimate",
         "imageUrl": "https://images.discordapp.net/avatars/522485771593056287/fdfdbc8a60cc79f12e1ef28e30d5a9ae.png",
         "releaseLink": "https://discordbots.org/bot/522485771593056287",
-        "type": "discord"
+        "type": "discord",
+        "game": 5
     }
 ]

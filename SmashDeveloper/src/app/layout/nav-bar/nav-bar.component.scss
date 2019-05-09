@@ -1,13 +1,20 @@
 .mat-toolbar {
-    * {
-        margin-right: .35em;
-    }
+  * {
+    margin-right: 0.35em;
+  }
 
-    a {
-        color: white;
-    }
-}
-.center-title {
-    text-align: center;
+  a {
+    color: white;
+  }
+  .resource-row {
     width: 100%;
+    .icons {
+      float: right;
+    }
+  }
+}
+
+.center-title {
+  text-align: center;
+  width: 100%;
 }

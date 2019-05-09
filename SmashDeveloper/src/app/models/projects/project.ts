@@ -18,4 +18,6 @@ export class Project {
 
     // TODO Convert to enum
     type: String;
+
+    game: Game;
 }
