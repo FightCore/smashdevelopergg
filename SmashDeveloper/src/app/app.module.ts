@@ -19,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SourceIconComponent } from './components/source-icon/source-icon.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ProjectIconComponent } from './components/project-icon/project-icon.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule
+    NgbModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
