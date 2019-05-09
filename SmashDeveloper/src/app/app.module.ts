@@ -20,6 +20,7 @@ import { SourceIconComponent } from './components/source-icon/source-icon.compon
 import { FooterComponent } from './layout/footer/footer.component';
 import { ProjectIconComponent } from './components/project-icon/project-icon.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { GameSelectorComponent } from './components/game-selector/game-selector.component';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectPageComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     SearchBarComponent,
     SourceIconComponent,
     FooterComponent,
-    ProjectIconComponent
+    ProjectIconComponent,
+    GameSelectorComponent
   ],
   imports: [
     BrowserModule,

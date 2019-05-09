@@ -1,3 +1,5 @@
+import { Game } from '../game';
+
 export class Project {
     id: number;
     name: String;

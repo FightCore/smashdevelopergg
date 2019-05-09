@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { ProjectService } from "src/app/services/project/project.service";
 import { Project } from "src/app/models/projects/project";
+import { Game } from 'src/app/models/game';
 
 @Component({
   selector: "app-project-page",
@@ -10,6 +11,9 @@ import { Project } from "src/app/models/projects/project";
 export class ProjectPageComponent implements OnInit {
   private projectList: Project[];
   private displayData: Project[];
+  private searchTerm: string;
+  private gameFilter: Game = Game.All;
+
   constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
@@ -29,14 +33,28 @@ export class ProjectPageComponent implements OnInit {
   }
 
   protected search(item: string) {
-    if (item) {
+    this.searchTerm = item;
+    this.setDisplayData();
+  }
+
+  protected filterOnGame(game: Game) {
+    this.gameFilter = game;
+
+    this.setDisplayData();
+  }
+
+  protected setDisplayData() {
       this.displayData = this.projectList.filter(project => {
-        return project.name.toLowerCase().includes(item.toLowerCase());
+        let containsGame = project.game === this.gameFilter;
+        if (project.game === Game.All || this.gameFilter === Game.All) {
+          containsGame = true;
+        }
+
+        if (this.searchTerm) {
+          return containsGame && project.name.toLowerCase().includes(this.searchTerm.toLowerCase());
+        }
+
+        return containsGame;
       });
-
-      return;
-    }
-
-    this.displayData = this.projectList;
   }
 }
