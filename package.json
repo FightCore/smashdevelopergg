@@ -28,6 +28,6 @@
   "devDependencies": {
     "@nuxt/typescript": "2.6.3",
     "@types/node": "10.14.6",
-    "@types/webpack-env": "1.13.9"
+    "@types/webpack-env": "1.13.9",
   }
 }
