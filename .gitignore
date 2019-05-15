@@ -1,6 +1,28 @@
 
-# Created by https://www.gitignore.io/api/vuejs,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=vuejs,visualstudiocode
+# Created by https://www.gitignore.io/api/nuxt,vuejs,nuxtjs,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=nuxt,vuejs,nuxtjs,visualstudiocode
+
+### Nuxt ###
+# gitignore template for Nuxt.js projects
+#
+# Recommended template: Node.gitignore
+
+# Nuxt build
+.nuxt
+
+ # Nuxt generate
+dist
+
+### Nuxtjs ###
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+
+# Nuxt generate
 
 ### VisualStudioCode ###
 .vscode/*
@@ -18,7 +40,6 @@
 
 node_modules/
 dist/
-npm-debug.log
 yarn-error.log
 
-# End of https://www.gitignore.io/api/vuejs,visualstudiocode
+# End of https://www.gitignore.io/api/nuxt,vuejs,nuxtjs,visualstudiocode
