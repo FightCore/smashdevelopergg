@@ -9,4 +9,4 @@ install:
   - npm install
 script:
   - npm run build
-  - sonar_cloud
+  - sonar-scanner
