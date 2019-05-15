@@ -1,0 +1,161 @@
+[
+    {
+        "name": "FightCore",
+        "owner": "Bort",
+        "description": "FightCore is intended to be the hub for fighting games to solve several large scale issues we tend to have. Our initial focus will be preparing for Smash Ultimate, with making sure resources (Game, Characters, Library) and H2H player stats are completed by end of November. Check our roadmap for more info!",
+        "sourceLink": "https://github.com/FightCore/FightCore",
+        "releaseLink": "https://www.fightcore.org",
+        "imageUrl": "https://github.com/FightCore/FightCore/blob/feature/cleanup/Frontend/src/assets/images/FC.png?raw=true",
+        "type": "website",
+        "game": 6
+    },
+    {
+        "name": "SmashDeveloper",
+        "owner": "Bort",
+        "description": "A list of tools and resources made by the smash community",
+        "sourceLink": "https://github.com/FightCore/SmashDevelopergg",
+        "releaseLink": "https://smashdeveloper.gg",
+        "type": "website",
+        "game": 6
+    },
+    {
+        "name": "Purah",
+        "owner": "monospacedmagic",
+        "description": "A Discord bot specifically designed for Discord communities around the game Super Smash Bros. Ultimate",
+        "imageUrl": "https://cdn.discordapp.com/attachments/528877460864106506/576161579721162788/4eddbb79dc463adf2e66414a0ed3ab25.png",
+        "bannerUrl": "https://cdn.discordapp.com/attachments/528877460864106506/576161579721162788/4eddbb79dc463adf2e66414a0ed3ab25.png",
+        "releaseLink": "https://discordbots.org/bot/522485771593056287",
+        "type": "discord",
+        "game": 5
+    },
+    {
+        "name": "OneSmash",
+        "owner": "Richard and Marcus Terrell",
+        "description": "The goal of OneSmash is to support the Smash community by providing constructive information and creating resources to help Smashers learn.\n\nWe are conducting a long term research study on how Smashers learn. We do this primarily by creating surveys and analyzing match footage. We have a small discord community for Smashers looking for a new way to train through drills, analysis, and reflection.\n\nOne Smash was founded by Richard and Marcus Terrell (the original Smash Brothers). Since the very first day Super Smash Bros. 64 was released, these brothers have enjoyed playing their favorite game series. They were a part of the grass roots effort to grow the Smash Melee community up from nothing to what it is today.",
+        "imageUrl": "http://onesmash.net/css/OneSmash_11_icon_400px",
+        "bannerUrl": "https://pbs.twimg.com/profile_banners/2798109211/1541260351/1500x500",
+        "type": "website",
+        "releaseLink": "http://onesmash.net",
+        "game": 6
+    },
+    {
+        "name": "smash.gg developer portal",
+        "owner": "smash.gg",
+        "description": "We're excited for you to use our new API with your applications. On our developer portal, you will find documentation for getting started, examples to reference, news about projects using our API, and more!",
+        "sourceLink": "https://github.com/smashgg/developer-portal",
+        "releaseLink": "https://developer.smash.gg/",
+        "imageUrl": "https://smash.gg/favicon.ico",
+        "type": "website",
+        "game": 6
+    },
+    {
+        "name": "Project Slippi",
+        "owner": "Fizzi, UnclePunch and metaconstruct",
+        "description": "Project Slippi is many things but at its core it is \"A Melee Data Framework\". Project Slippi integrates into Melee at the deepest level to extract data into replay files. The replay files are then used to enable things such as HD streaming, complex stats analysis, game discovery and archiving, and much more",
+        "releaseLink": "https://slippi.gg",
+        "sourceLink": "https://github.com/project-slippi",
+        "bannerUrl": "http://i.atlasbot.net/u/22.42.14-10.05.19.png",
+        "game": 2,
+        "type": "website"
+    },
+    {
+        "name": "Smash Ultimate Data Viewer",
+        "owner": "rubendal",
+        "bannerUrl": "http://i.atlasbot.net/u/14.32.03-11.05.19.png",
+        "description": "View Smash Ultimate game data, currently only stage data. Character data will be added when it's available",
+        "releaseLink": "https://rubendal.github.io/ssbu/",
+        "sourceLink": "https://github.com/rubendal/ssbu",
+        "game": 5,
+        "type": "website"
+    },
+    {
+        "name": "Smash Ultimate Calculator",
+        "owner": "rubendal",
+        "bannerUrl": "http://i.atlasbot.net/u/14.34.24-11.05.19.png",
+        "description": "",
+        "releaseLink": "https://rubendal.github.io/SSBU-Calculator/",
+        "sourceLink": "https://github.com/rubendal/SSBU-Calculator",
+        "game": 5,
+        "type": "website"
+    },
+    {
+        "name": "Sm4sh Calculator",
+        "owner": "rubendal",
+        "bannerUrl": "",
+        "description": "Web based Smash 4 knockback calculator, featuring a Percentage Calculator, Move Search, Script Viewer, Script Diff Viewer, Script Search, Param Viewuer and MSC Script Viewer.",
+        "imageUrl": "https://rubendal.github.io/Sm4sh-Calculator/img/icon.png",
+        "releaseLink": "https://rubendal.github.io/Sm4sh-Calculator/",
+        "sourceLink": "https://github.com/rubendal/Sm4sh-Calculator",
+        "game": 4,
+        "type": "website"
+    },
+    {
+        "name": "The KuroganeHammer.com API",
+        "owner": "Frannsoft",
+        "description": "Restful api for Super Smash Bros. 4 and Super Smash Bros. Ultimate frame data as told by @KuroganeHammer. This is being worked on with @KuroganeHammer's permission. All credit for the actual data that is stored and retrieved goes to him and any other people that are involved in that process.\n\nAllows consumers to pull back the data displayed on @KuroganeHammer's site as JSON. The data is not scraped from the site on-call, but is cached.",
+        "sourceLink": "https://github.com/Frannsoft/FrannHammer",
+        "releaseLink": "http://beta-api-kuroganehammer.azurewebsites.net/swagger/ui/index",
+        "game": 5,
+        "type": "sdk"
+    },
+    {
+        "name": "Ultimate Banner Maker",
+        "owner": "Auride",
+        "description": "A tool to generate banners using Ultimate Character icons. Features lot's of customization and easy conversion to a Twitter banner.",
+        "bannerUrl": "http://i.atlasbot.net/u/22.58.13-10.05.19.png",
+        "releaseLink": "https://dshepsis.github.io/Smash-Ultimate-Picker/banner",
+        "sourceLink": "https://github.com/dshepsis/Smash-Ultimate-Picker",
+        "game": 5,
+        "type": "website"
+    },
+    {
+        "name": "Handbook for Super Smash Bros. Melee",
+        "owner": "OxKiwi",
+        "description": "This an android app for Super Smash Bros. Melee.\n\nIt has features such as different themes, several options for the user to choose, beautiful Material Design, insane performance and is just darn helpful.\n\nFeatures: Advanced Techniques, Characters, Fundementals, Matchups, Stages, Terminology, Unique Techniques and Staying Healthy.",
+        "imageUrl": "https://lh3.googleusercontent.com/9X78hrn8dn_I2MYTl5SXP5D6ZYmXp-DSyzeK90WGG2dBMsl__4cEQiq7YLe6scukSI8=s180-rw",
+        "releaseLink": "https://play.google.com/store/apps/details?id=com.thatkawaiiguy.meleehandbook&hl=en",
+        "sourceLink": "https://github.com/0xKiwi/Handbook_for_Melee",
+        "bannerUrl": "https://camo.githubusercontent.com/5d73c3fafa6d55e35f8cbf594d6c70378408cadc/687474703a2f2f692e696d6775722e636f6d2f736278555950542e706e67",
+        "game": 2,
+        "type": "app"
+    },
+    {
+        "name": "smashgg.js",
+        "owner": "BrandonCookeDev",
+        "description": "Node.js SDK for the public Smash.gg API, which is rich with data about tournament brackets that have occurred on their platform.",
+        "sourceLink": "https://github.com/BrandonCookeDev/smashgg.js",
+        "releaseLink": "https://www.npmjs.com/package/smashgg.js?activeTab=readme",
+        "bannerUrl": "https://raw.githubusercontent.com/BrandonCookeDev/smashgg.js/HEAD/resources/images/smashgg.js.v4.png",
+        "game": 6,
+        "type": "sdk"
+    },
+    {
+        "name": "Peach!",
+        "owner": "zsd7200",
+        "description": "Super Smash Bot, also known as Peach, can pull top player information from SSBWiki, can get official yearly top player rankings for each Smash Bros. game (locally stored and manually formatted), can perform a Vegetable pull simulation, and can get highlights from different Smash-related YouTube channels. She can also have an array of messages that she will listen for and respond to accordingly.",
+        "sourceLink": "https://github.com/zsd7200/SuperSmashBot",
+        "releaseLink": "https://discordbots.org/bot/397823985955635200",
+        "imageUrl": "https://images.discordapp.net/avatars/397823985955635200/7dfc625797cb81a3b5581d8e0919c61f.png",
+        "game": 6,
+        "type": "discord"
+    },
+    {
+        "name": "Smash Tier List",
+        "owner": "desko27",
+        "description": "An Open Source Tier List application that covers all characters in Super Smash Bros game series with UX and performance in mind. Built on top of React and proudly hosted on Netlify.",
+        "releaseLink": "https://smash-tier-list.com",
+        "sourceLink": "https://github.com/desko27/smash-tier-list",
+        "bannerUrl": "https://user-images.githubusercontent.com/4168389/45924092-1a2a9d00-bef7-11e8-8153-e701ec523391.gif",
+        "game": 6,
+        "type": "website"
+    },
+    {
+        "name": "Button Smash Bros",
+        "owner": "Mr. R, iStudying & Moreepo",
+        "description": "Button Smash Bros is a group of friends (Mr. R, iStudying & Moreepo) that thought it would be a good idea to give back to the Smash Community.\nOur mission is to create content for entertainment and educational purposes.\nThe first project being this Smash Ultimate Discord\n\nThe mission for this channel is to create a Smash Ultimate community with all the people that enjoy the game.\nWhat makes this discord so unique is that we integrated Twitter.\n\nTwitter has become one of the most used platforms for Smash Bros players.\nNow with this discord, it is possible to create a centralized place for all the great content that comes from twitter by using certain hashtags.",
+        "releaseLink": "https://discord.gg/vCF6Zp5",
+        "imageUrl": "https://cdn.discordapp.com/icons/469158221999767572/e1fbc06d5237ff0c6ec9391ec8830537.webp",
+        "type": "discord",
+        "game": 5
+    }
+]

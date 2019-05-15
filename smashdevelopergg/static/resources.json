@@ -1,0 +1,15 @@
+[
+    {
+        "title": "APIs",
+        "resources": [
+            {
+                "title": "smash.gg API",
+                "documentationUrl": "developer.smash.gg"
+            },
+            {
+                "title": "FightCore API",
+                "documentationUrl": "https://api.fightcore.org"
+            }
+        ]
+    }
+]
