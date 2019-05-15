@@ -6,17 +6,5 @@
   </v-layout>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
-import ResourceSectionDisplay from "~/components/ResourceSectionDisplay.vue";
-import { ResourceSection } from "~/models/resourceSection";
-
-@Component({
-  components: {
-    // ResourceSectionDisplay
-  }
-})
-export default class extends Vue {
-  // resourceSections = require("~/static/resources.json");
-}
-</script>
+<script src="./index.ts" lang="ts"/>
+<style src="./index.scss" lang="scss" scoped/>

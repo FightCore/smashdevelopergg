@@ -10,6 +10,7 @@
     ],
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "strictFunctionTypes": false,
     "sourceMap": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,

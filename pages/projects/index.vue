@@ -15,42 +15,5 @@
   </section>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
-import ProjectDisplay from "~/components/ProjectDisplay.vue";
-import { Project } from "~/models/project";
-
-@Component({
-  components: {
-    ProjectDisplay
-  }
-})
-export default class extends Vue {
-  projects: Project[] = require("~/static/projects.json");
-  displayData: Project[] = this.projects;
-  searchTerm: string = "";
-
-  protected search() {
-    this.displayData = this.projects.filter(project => {
-      if (project && project.name) {
-        project.name.toLowerCase().includes(this.searchTerm.toLowerCase());
-      }
-
-      return false;
-    });
-  }
-}
-</script>
-
-<style scoped>
-.row {
-  overflow: hidden;
-}
-.project-item {
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-top: 1em;
-}
-</style>
+<script src="./index.ts" lang="ts"/>
+<style src="./index.scss" lang="scss" scoped/>
