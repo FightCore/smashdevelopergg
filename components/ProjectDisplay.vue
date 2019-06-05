@@ -1,31 +1,33 @@
 <template>
-  <v-card class="project-card">
-    <v-img v-if="project.bannerUrl" v-bind:src="project.bannerUrl" aspect-ratio="2.75"></v-img>
-    <v-card-title primary-title>
-      <div class="header">
-        <v-avatar class="left-header" :size="70" tile v-if="project.imageUrl">
-          <img v-bind:src="project.imageUrl" alt="avatar">
-        </v-avatar>
-        <div class="right-header">
-          <fa class="fa-3x" :icon="getIcon()"/>
+  <v-hover>
+    <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`" class="project-card">
+      <v-img v-if="project.bannerUrl" v-bind:src="project.bannerUrl" aspect-ratio="2.75"></v-img>
+      <v-card-title primary-title>
+        <div class="header">
+          <v-avatar class="left-header" :size="70" tile v-if="project.imageUrl">
+            <img v-bind:src="project.imageUrl" alt="avatar">
+          </v-avatar>
+          <div class="right-header">
+            <fa class="fa-3x" :icon="getIcon()"/>
+          </div>
+          <div class="center-header">
+            <h3 class="headline mb-0">{{ project.name }}</h3>
+            <div>By {{ project.owner }}</div>
+          </div>
         </div>
-        <div class="center-header">
-          <h3 class="headline mb-0">{{ project.name }}</h3>
-          <div>By {{ project.owner }}</div>
+      </v-card-title>
+      <v-card-text class="project-text">
+        <p>{{ project.description }}</p>
+      </v-card-text>
+      <v-card-actions class="project-action">
+        <v-btn v-bind:href="project.sourceLink" v-if="project.sourceLink" color="info">Source code</v-btn>
+        <v-btn v-bind:href="project.releaseLink" v-if="project.releaseLink" color="info">Release</v-btn>
+        <div class="game-chip">
+          <v-chip>{{ getGameName() }}</v-chip>
         </div>
-      </div>
-    </v-card-title>
-    <v-card-text class="project-text">
-      <p>{{ project.description }}</p>
-    </v-card-text>
-    <v-card-actions class="project-action">
-      <v-btn v-bind:href="project.sourceLink" v-if="project.sourceLink" color="info">Source code</v-btn>
-      <v-btn v-bind:href="project.releaseLink" v-if="project.releaseLink" color="info">Release</v-btn>
-      <div class="game-chip">
-        <v-chip>{{ getGameName() }}</v-chip>
-      </div>
-    </v-card-actions>
-  </v-card>
+      </v-card-actions>
+    </v-card>
+  </v-hover>
 </template>
 
 <script lang="ts">
@@ -47,17 +49,17 @@ export default class ProjectDisplay extends Vue {
   }
 
   protected getIcon(): string[] {
-    if (this.project.type === 'discord') {
+    if (this.project.type === "discord") {
       return ["fab", "discord"];
     }
-    if (this.project.type === 'sdk') {
-      return ['fas', 'wrench']
+    if (this.project.type === "sdk") {
+      return ["fas", "wrench"];
     }
-    if (this.project.type === 'website') {
-      return ['fas', 'globe'];
+    if (this.project.type === "website") {
+      return ["fas", "globe"];
     }
-    if (this.project.type === 'app') {
-      return ['fas', 'mobile-alt']
+    if (this.project.type === "app") {
+      return ["fas", "mobile-alt"];
     }
 
     return ["fas", "clock"];
@@ -72,7 +74,7 @@ export default class ProjectDisplay extends Vue {
 
 .left-header {
   float: left;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .center-header {
