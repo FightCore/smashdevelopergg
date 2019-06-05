@@ -6,7 +6,7 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat to="/projects" nuxt>Projects</v-btn>
-      <v-btn flat>Resources</v-btn>
+      <v-btn flat to="/resources" nuxt>Resources</v-btn>
       <v-btn flat>Contributors</v-btn>
       <v-btn flat v-on:click="isDark = !isDark">Switch Theme</v-btn>
     </v-toolbar-items>

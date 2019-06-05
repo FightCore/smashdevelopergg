@@ -10,6 +10,5 @@ import { ResourceSection } from '~/models/resourceSection';
 
 Component({})
 export default class ResourceSectionDisplay extends Vue {
-    // @Prop() resourceSection!: any;
 }
 </script>
