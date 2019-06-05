@@ -1,10 +1,14 @@
 <template>
   <section>
-    <v-layout row>
-      <v-flex xs12 md12>
-        <v-toolbar>
+    <v-layout class="info-row" row wrap>
+      <v-flex xs12 md5>
+        <v-alert :value="true" type="info">
+          All projects on this website have been approved by their respective creators.
+        </v-alert>
+      </v-flex>
+      <v-flex xs12 md1></v-flex>
+      <v-flex xs12 md6>
           <v-text-field v-model="searchTerm" label="Search" @change="search"></v-text-field>
-        </v-toolbar>
       </v-flex>
     </v-layout>
     <v-layout class="project-row" row wrap>
