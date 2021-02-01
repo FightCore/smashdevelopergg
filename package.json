@@ -7,7 +7,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@nuxtjs/axios": "5.5.3",
-    "@nuxtjs/vuetify": "^0.5.6",
+    "@nuxtjs/vuetify": "^1.11.3",
     "node-sass": "^4.12.0",
     "nuxt": "2.8.1",
     "nuxt-fontawesome": "^0.4.0",
