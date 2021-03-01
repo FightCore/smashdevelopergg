@@ -14,7 +14,7 @@
     "nuxt-property-decorator": "2.3.0",
     "sass-loader": "^7.1.0",
     "ts-node": "8.2.0",
-    "vuetify": "^1.5.14",
+    "vuetify": "^2.4.5",
     "vuetify-loader": "^1.2.2",
     "vuex-class": "0.3.2"
   },
